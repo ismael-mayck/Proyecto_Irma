@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+h2{
+  text-align: center;
+}
+
+main{
+  /*Para ponerlo en la parte superior
+    ademas de que no se necesita el display in line-block
+    y puedes usar el 100% de espacio de tu pagina web
+  */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+header, main,footer, h1{
+  width: 80%;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+section,aside,footer{
+  background: rgba(0, 0, 0, 0.74);
+  border: 3px solid rgba(66, 65, 65, 0.57);
+  border-radius: 7px;
+}
+
+section{
+  width: 1200px;
+  height: 250px;
+}
+
+h1{
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+header nav ul{
+  background: rgba(0, 0, 0, 0.74);
+  list-style: none;
+  text-align: center;
+  border-radius: 7px;
+}
+
+header nav ul li{
+  display: inline-block;
+  width: 110px;
+}
+
+header nav ul li a{
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover{
+  background: rgba(38, 38, 38, 0.54);
+  transition: 0.5s all linear;
+}
+
+section{
+  width: 70%;
+  padding: 20px;
+  /*display: inline-block;*/
+}
+
+aside{
+  width: 28%;
+  /*margen de costado*/
+  margin-left: 2%;
+  padding: 5px;
+  /*display: inline-block;*/
+}
+
+aside input{
+  padding: 5px;
+  width: 80%;
+  font-weight: bold;
+  /*quitar el margen por automatico*/
+  outline: none;
+}
+
+aside input[type="submit"]{
+  background: black;
+  padding: 8px 15px;
+  width: 50%;
+  margin-top: 4px;
+  border: 3px solid rgba(66, 65, 65, 0.57);
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+p.texto{
+  font-size: .8cm;
+  color: white;
+  padding-top: 10px;
+  transition: padding-top .4s;
+}
+
+img.icon{
+  display: inline-block;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.48);
+  width: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 10px rgba(255,255,255,0);
+  transition: box-shadow .4s;
+}
+
+aside input[type="submit"]:active{
+  background: rgb(75, 75, 75);
+  transform: scale(1.05);
+}
+
+table.primero{
+  width: 75%;
+  /*Se quitan los espacios entre lineas*/
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table.primero td{
+  padding: 15px;
+  text-align: center;
+}
+
+table.segundo{
+  border: 1px solid black;
+  width: 60%;
+  /*Se quitan los espacios entre lineas*/
+  border-collapse: collapse;
+}
+
+/*poner lineas para la tabla*/
+table.segundo td{
+  padding: 15px;
+  border: 1px solid white;
+}
+
+table.segundo tr td.colores{
+  color: yellow;
+}
+
+table.segundo tr:hover{
+  background: rgb(91, 91, 91);
+  transition: 0.5s all linear;
+}
+
+.Sin_Color:hover{
+  background: none;
+}
+
+
+footer{
+  border-radius: 5px;
+  text-align: center;
+  padding: 7px;
+}
+
+footer a:link{
+  color: White;
+}
